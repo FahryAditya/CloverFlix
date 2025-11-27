@@ -378,3 +378,4 @@ class HistoryPage extends StatelessWidget {
     );
   }
 }
+ 

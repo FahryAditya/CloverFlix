@@ -308,6 +308,7 @@ class _SearchPageState extends State<SearchPage> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
             side: BorderSide(
+              // ignore: deprecated_member_use
               color: const Color(0xFF1E88E5).withOpacity(0.2),
             ),
           ),

@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'auth_service.dart';
-import 'package:anime_app/search_page.dart';
-import 'package:anime_app/login_page.dart';
-import 'login_page.dart';
-import 'main.dart';
+import 'app_routes.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -84,10 +81,8 @@ class _ProfilePageState extends State<ProfilePage> with SingleTickerProviderStat
       await _authService.signOut();
       if (!mounted) return;
       
-      Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (_) => const LoginPage()),
-        (route) => false,
-      );
+      // Navigate to login using AppRoutes
+      Navigator.of(context).pushNamedAndRemoveUntil(AppRoutes.login, (route) => false);
     }
   }
 
