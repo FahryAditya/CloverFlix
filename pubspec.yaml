@@ -1,43 +1,82 @@
 name: anime_app
-description: Flutter Anime Streaming App v1.0
+description: A comprehensive anime, manga, and manhwa application
 publish_to: 'none'
-
-version: 1.0.0+1
+version: 2.0.0+1
 
 environment:
-  sdk: ">=3.3.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
 
-  # Google Sign In
-  google_sign_in: ^6.0.2
+  # Networking
+  http: ^1.6.0
 
-  # HTTP requests
-  http: ^1.1.0
+  # Images
+  cached_network_image: ^3.3.1
 
-  # Shared Preferences
-  shared_preferences: ^2.2.0
+  # Video Player
+  youtube_player_flutter: ^9.1.3
 
-  # Youtube Player
-  youtube_player_flutter: ^8.1.1
+  # Dates & Formatters
+  intl: ^0.20.2
 
-  # WebView (optional fallback)
-  webview_flutter: ^4.2.2
+  # Local Storage
+  shared_preferences: ^2.3.2
 
-  # Animations
-  flutter_staggered_animations: ^1.1.0
+  # UI & Animations
+  shimmer: ^3.0.0
+  flutter_staggered_animations: ^1.1.1
 
-  # State management (simple)
-  provider: ^6.0.5
+  # Social Share
+  share_plus: ^12.0.1
+
+  # Carousel (AMAN untuk Flutter baru, TIDAK bentrok!)
+  card_swiper: ^3.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+
+  flutter_lints: ^4.0.0
 
 flutter:
   uses-material-design: true
 
-  
+
+
+
+
+
+
+
+# name: anime_app
+# description: A comprehensive anime and manga application
+# publish_to: 'none'
+# version: 2.1.0+1
+
+# environment:
+#   sdk: '>=3.0.0 <4.0.0'
+
+# dependencies:
+#   flutter:
+#     sdk: flutter
+#   http: ^1.1.0
+#   cached_network_image: ^3.3.0
+#   youtube_player_flutter: ^9.0.1
+#   intl: ^0.18.1
+#   shared_preferences: ^2.2.2
+#   shimmer: ^3.0.0
+#   carousel_slider: ^4.2.1
+#   flutter_staggered_animations: ^1.1.1
+#   share_plus: ^7.2.1
+#   url_launcher: ^6.2.2
+
+# dev_dependencies:
+#   flutter_test:
+#     sdk: flutter
+#   flutter_lints: ^2.0.0
+
+# flutter:
+#   uses-material-design: true
